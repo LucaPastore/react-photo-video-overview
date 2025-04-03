@@ -1,0 +1,43 @@
+nav {
+  background: linear-gradient(
+    to bottom,
+    var(--sand-beige),
+    var(--secondary-blue)
+  );
+}
+
+nav ul {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  height: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+nav ul li {
+  display: flex;
+  align-items: center; /* Centra verticalmente il contenuto */
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+nav ul li:hover {
+  font-size: 1.6rem;
+  transition: font-size 0.2s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.active {
+  color: var(--text-black);
+  font-size: 1.8rem;
+}

@@ -1,0 +1,26 @@
+.card-layout {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  border-radius: 0.5rem;
+  grid-column: 2/6;
+  grid-row: 1/2;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  grid-column: 7/12;
+  grid-row: 1/2;
+}
+
+.card-layout-inverted .image-container {
+  grid-column: 8/12;
+}
+.card-layout-inverted .card-text {
+  grid-column: 2/7;
+}

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap");
+
+:root {
+  --primary-blue: #2e86ab; /* Azzurro oceano */
+  --secondary-blue: #6bb9f0; /* Blu chiaro mare */
+  --sand-beige: #f4e1c1; /* Beige sabbia */
+  --sunset-orange: #ff8c42; /* Arancione tramonto */
+  --wave-white: #ffffff; /* Bianco onde */
+  --text-dark: #2c3e50; /* Grigio scuro per testi */
+  --text-black: black;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Quicksand", sans-serif;
+}
+
+main {
+  position: relative;
+  min-height: 500px;
+  background-color: var(--secondary-blue);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
