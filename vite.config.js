@@ -1,14 +1,15 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import commonjs from '@rollup/plugin-commonjs';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["isomorphic-fetch"], // Seleziona le dipendenze esterne che non devono essere incluse nel bundle
+      plugins: [
+        commonjs() // Aggiungi il plugin per trasformare i moduli CommonJS
+      ]
     }
-  },
-  optimizeDeps: {
-    include: ["isomorphic-fetch"]
   }
 });
