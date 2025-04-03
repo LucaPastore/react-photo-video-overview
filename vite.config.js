@@ -1,13 +1,12 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import replace from '@rollup/plugin-replace';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    replace({
-      'require(': 'import(', // Sostituisce require con import
-      preventAssignment: true, // Impedisce che venga fatto un cambio indesiderato
-    }),
-  ]
+  plugins: [react()],
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
 });
